@@ -1,0 +1,14 @@
+
+type Stock {
+    name: String
+    ticker: String
+    currentPrice: Float
+    historicalPrices: [Float]
+    highestPrice: Float
+    lowestPrice: Float
+    tradingVolume: Float
+}
+
+type Query {
+    stock(ticker: String!): Stock
+}
